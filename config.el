@@ -40,10 +40,6 @@
 
 (setq org-roam-directory "/mnt/d/notebooks/roam/")
 
-(set-frame-parameter nil 'alpha-background 70)
-
-(add-to-list 'default-frame-alist '(alpha-background . 70))
-
 ;; (setq emacsql-sqlite-executable "/usr/bin/sqlite3")
 
 (use-package! org-super-agenda

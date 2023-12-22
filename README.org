@@ -13,7 +13,7 @@
     $ wget http://mirrors.nav.ro/gnu/emacs/emacs-29.1.tar.xz
     $ tar xvf emacs-29.1.tar.xz
 
-Alternatively you can download from the nearby GNU mirror https://www.gnu.org/software/emacs/download.html
+    Alternatively you can download from the nearby GNU mirror https://www.gnu.org/software/emacs/download.html
 
 3. Install Emacs / Build Package
 

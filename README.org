@@ -1,7 +1,7 @@
 #+title: DOOM EMACS FROM SOURCE ON WSL AND CONFIGURATION
 #+PROPERTY: header-args :tangle config.el
 
-This will cover
+# This will cover
 
 * Installing EMACS-29.1 on DEBIAN WSL
 
@@ -32,11 +32,7 @@ $ sudo make install
 
    $ which emacs
 
-#+BEGIN_COMMENT
-for some reason i had to create symlinks to /usr/local/bin/emacs
-
-additionally i had to install some libs manually
-#+END_COMMENT
+# For some reason i had to create symlinks to /usr/local/bin/emacs. Additionally i had to install some libs manually.
 
 
 * Installing Doom Emacs

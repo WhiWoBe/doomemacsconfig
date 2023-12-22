@@ -1,4 +1,4 @@
-#+title: DOOM EMACS FROM SOURCE ON WSL AND CONFIGURATION
+#+title: DOOMEMACS 29.1 on Debian WSL with config
 #+PROPERTY: header-args :tangle config.el
 
 * Installing EMACS-29.1 on DEBIAN WSL
@@ -215,6 +215,9 @@ change `org-directory'. It must be set before org loads!
 #+end_src
 
 * Browser
+
+this runs msedge on windows to open web links.
+adjust the path in "" to your preferred Browser
 
 #+begin_src elisp
 

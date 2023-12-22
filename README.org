@@ -1,38 +1,35 @@
 #+title: DOOM EMACS FROM SOURCE ON WSL AND CONFIGURATION
 #+PROPERTY: header-args :tangle config.el
 
-# This will cover
-
 * Installing EMACS-29.1 on DEBIAN WSL
 
 1. Install the build dependencies for Emacs:
 
-$ sudo apt build-dep emacs
-$ sudo apt install libtree-sitter-dev
+    $ sudo apt build-dep emacs
+    $ sudo apt install libtree-sitter-dev
 
 2. Download and unpack the Emacs archive:
 
-$ wget http://mirrors.nav.ro/gnu/emacs/emacs-29.1.tar.xz
+    $ wget http://mirrors.nav.ro/gnu/emacs/emacs-29.1.tar.xz
 
-#+BEGIN_COMMENT
 alternativelt you can download from the nearby GNU mirror
 https://www.gnu.org/software/emacs/download.html
-#+END_COMMENT
 
-$ tar xvf emacs-29.1.tar.xz
+    $ tar xvf emacs-29.1.tar.xz
 
 3. Install Emacs / Build Package
 
-$ ./autogen.sh
-$ ./configure --with-native-compilation --with-mailutils --with-json --with-tree-sitter --with-pgtk CC=gcc-12
-$ make -j$(nproc)
-$ sudo make install
+    $ ./autogen.sh
+    $ ./configure --with-native-compilation --with-mailutils --with-json --with-tree-sitter --with-pgtk CC=gcc-12
+
+    $ make -j$(nproc)
+    $ sudo make install
 
 4. Check if installed via
 
    $ which emacs
 
-# For some reason i had to create symlinks to /usr/local/bin/emacs. Additionally i had to install some libs manually.
+For some reason i had to create symlinks to /usr/local/bin/emacs. Additionally i had to install some libs manually.
 
 
 * Installing Doom Emacs

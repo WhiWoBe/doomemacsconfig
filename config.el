@@ -3,13 +3,14 @@
 
   (setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
   (setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
-  (setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+  ( setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
   (setq scroll-step 1) ;; keyboard scroll one line at a time
 ;;  (setq use-dialog-box nil)) ;; Disable dialog boxes since they weren't working in Mac OSX
-
-;; Window frame startup size
+;; # Window frame startup size
 (setq initial-frame-alist '((top . 1) (right . 1) (width . 114) (height . 46)))
-;; (setq default-frame-alist '(alpha 50 50))
+;; # Frame Transparency
+;; (set-frame-parameter nil 'alpha-background 70)
+(add-to-list 'default-frame-alist '(alpha-background . 85))
 
 (map! :ne "M-/" #'comment-or-uncomment-region)
 
@@ -34,12 +35,10 @@
 
 (setq +doom-dashboard-ascii-banner-fn #'my-weebery-is-always-greater)
 
-(setq org-directory "/mnt/d/notebooks/emacsNotes/")
-
 (setq default-directory "/mnt/d/notebooks/DemacsNotes/")
+(setq org-directory "/mnt/d/notebooks/DemacsNotes/org")
 
-(setq org-roam-directory "/mnt/d/notebooks/roam/")
-
+(setq org-roam-directory "/mnt/d/notebooks/DemacsNotes/roam/")
 ;; (setq emacsql-sqlite-executable "/usr/bin/sqlite3")
 
 (use-package! org-super-agenda
